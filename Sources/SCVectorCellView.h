@@ -12,5 +12,7 @@
 
 @property (weak) IBOutlet NSTextField *xTextField;
 @property (weak) IBOutlet NSTextField *yTextField;
+@property (weak) IBOutlet NSTextField *zTextField;
+@property (weak) IBOutlet NSTextField *wTextField;
 
 @end

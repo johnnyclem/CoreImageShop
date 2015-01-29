@@ -16,6 +16,8 @@
     CIVector *vector = parameterValue;
     self.xTextField.floatValue = vector.X;
     self.yTextField.floatValue = vector.Y;
+    self.zTextField.floatValue = vector.Z;
+    self.wTextField.floatValue = vector.W;
 }
 
 - (void)awakeFromNib {
@@ -25,12 +27,22 @@
 
 - (IBAction)xTextFieldChanged:(NSTextField *)sender {
     CIVector *vector =  self.parameterValue;
-    self.parameterValue = [CIVector vectorWithX:sender.floatValue Y:vector.Y];
+    self.parameterValue = [CIVector vectorWithX:sender.floatValue Y:vector.Y Z:vector.Z W:vector.W];
 }
 
 - (IBAction)yTextFieldChanged:(NSTextField *)sender {
     CIVector *vector =  self.parameterValue;
-    self.parameterValue = [CIVector vectorWithX:vector.X Y:sender.floatValue];
+    self.parameterValue = [CIVector vectorWithX:vector.X Y:sender.floatValue Z:vector.Z W:vector.W];
+}
+
+- (IBAction)zTextFieldChanged:(NSTextField *)sender {
+    CIVector *vector =  self.parameterValue;
+    self.parameterValue = [CIVector vectorWithX:vector.X Y:vector.Y Z:sender.floatValue W:vector.W];
+}
+
+- (IBAction)wTextFieldChanged:(NSTextField *)sender {
+    CIVector *vector =  self.parameterValue;
+    self.parameterValue = [CIVector vectorWithX:vector.X Y:vector.Y Z:vector.Z W:sender.floatValue];
 }
 
 @end
