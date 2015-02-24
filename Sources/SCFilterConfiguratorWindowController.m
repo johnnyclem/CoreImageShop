@@ -79,6 +79,9 @@
         if (type == nil) {
             type = [filter objectForKey:kCIAttributeClass];
         }
+        if ([type isEqualToString:@"CIAttributeTypeOffset"]) {
+            type = @"CIVector";
+        }
         
     } else {
         type = @"ResetDefaults";

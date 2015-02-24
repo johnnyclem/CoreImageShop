@@ -29,6 +29,7 @@
         self.layerUsesCoreImageFilters = YES;
         [self setWantsLayer:YES];
         _imageView = [[NSImageView alloc] init];
+
         _player = [[AVPlayer alloc] init];
         _player.actionAtItemEnd = AVPlayerActionAtItemEndNone;
         _player.volume = 0;
@@ -88,6 +89,7 @@
 - (void)updateSubviews {
     _playerLayer.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
     _imageView.frame = self.bounds;
+    _imageView.imageScaling = NSImageScaleProportionallyUpOrDown;
 }
 
 - (void)resizeWithOldSuperviewSize:(NSSize)oldSize {
@@ -177,8 +179,7 @@
             [self display];
             [self saveMedia];
         } else {
-            NSAlert *alert = [NSAlert alertWithMessageText:@"Invalid file" defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:@"Only video or images are accepted"];
-            [alert runModal];
+            _imageView.image = [NSImage imageNamed:@"owl"];
         }
     }
     

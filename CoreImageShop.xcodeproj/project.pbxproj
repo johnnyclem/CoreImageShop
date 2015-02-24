@@ -261,9 +261,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DCB041851926817D00D945D2 /* CoreImageShop */ = {
+		DCB041851926817D00D945D2 /* Filmic Composer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCB041B71926817E00D945D2 /* Build configuration list for PBXNativeTarget "CoreImageShop" */;
+			buildConfigurationList = DCB041B71926817E00D945D2 /* Build configuration list for PBXNativeTarget "Filmic Composer" */;
 			buildPhases = (
 				DCB041821926817D00D945D2 /* Sources */,
 				DCB041831926817D00D945D2 /* Frameworks */,
@@ -274,7 +274,7 @@
 			);
 			dependencies = (
 			);
-			name = CoreImageShop;
+			name = "Filmic Composer";
 			productName = CoreImageShop;
 			productReference = DCB041861926817D00D945D2 /* CoreImageShop.app */;
 			productType = "com.apple.product-type.application";
@@ -301,7 +301,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DCB041851926817D00D945D2 /* CoreImageShop */,
+				DCB041851926817D00D945D2 /* Filmic Composer */,
 			);
 		};
 /* End PBXProject section */
@@ -413,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -446,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -499,7 +499,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCB041B71926817E00D945D2 /* Build configuration list for PBXNativeTarget "CoreImageShop" */ = {
+		DCB041B71926817E00D945D2 /* Build configuration list for PBXNativeTarget "Filmic Composer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCB041B81926817E00D945D2 /* Debug */,
